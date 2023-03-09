@@ -6,11 +6,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Features
 
+### Base Features
+
 - typescript
+
+### Optional Features
 
 ## Features TODO
 
-- file structure
+- preferred file structure
 - testing framework
     - unit testing
     - e2e testing
