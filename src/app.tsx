@@ -1,14 +1,14 @@
 import React from 'react';
 import { CssBaseline, ThemeProvider } from '@mui/material';
-
+import { RouterProvider,  } from 'react-router-dom';
 import theme from './theme/theme';
-import { Navbar } from './components/navbar/navbar';
+import { router } from './router';
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Navbar />
+      <RouterProvider router={router} />
     </ThemeProvider>
   );
 }

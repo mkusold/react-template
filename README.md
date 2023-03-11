@@ -8,31 +8,27 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### Base Features
 
+- preferred file structure
 - typescript
+- MUI & styled components with theming
+- routing (multiple pages, query params, 404 page)
 
 ### Optional Features
 
 ## Features TODO
 
-- preferred file structure
+- linting
 - testing framework
     - unit testing
     - e2e testing
 - Dockerized
-- style library
-    - supports custom theming
-    - MUI w/ emotion
 - state management (redux)
     - using redux toolkit
     - with examples of live updating data
     - api request examples
     - mock data
 - user login
-- routing
-    - multiple pages
-    - dynamic pages that get key parameters
-    - 404 page
-      - CSS animation or webgl 2D / 3D animation
+- CSS animation or webgl 2D / 3D animation
 - map (openlayers)
 - metadata
     - favicon
