@@ -46,6 +46,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - dotenv vars
 - CI/CD?
     - netlify?
+- logging?
 
 ## Available Scripts
 
