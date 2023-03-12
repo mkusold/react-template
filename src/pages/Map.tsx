@@ -18,7 +18,7 @@ export const Map = () => {
               justifyContent: 'center',
               alignItems: 'center'
             }}>
-                <Typography variant="h3">Map {center ? `centered on ${center}` : ''}</Typography>
+                <Typography variant="h3">Map {center !== null ? `centered on ${center}` : ''}</Typography>
             </Box>
         </Base>
   )
