@@ -1,11 +1,11 @@
 import React from "react";
 import { createBrowserRouter } from "react-router-dom";
-import { ROUTES } from "./pages/routes";
-import { Home } from "./pages/Home";
-import { Map } from "./pages/Map";
-import { FourOhFour } from "./pages/FourOhFour";
+import { ROUTES } from "./routes";
+import { Home } from "./Home";
+import { Map } from "./Map";
+import { FourOhFour } from "./FourOhFour";
 
-// refer to pages/routes.ts for further route information
+// refer to routes.ts for further route information
 // this separation exists to prevent circular dependencies
 export const router = createBrowserRouter([
     {
