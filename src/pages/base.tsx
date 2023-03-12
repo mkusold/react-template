@@ -1,16 +1,16 @@
-import React, { ReactNode } from "react";
-import { Navbar } from "../components/navbar/navbar";
+import React, { type ReactNode } from 'react'
+import { Navbar } from '../components/navbar/navbar'
 
 interface Props {
-    children: ReactNode;
+  children: ReactNode
 }
 
-export const Base: React.FC<Props> = ({children}) => {
-    return (
+export const Base: React.FC<Props> = ({ children }) => {
+  return (
         <>
             <Navbar />
             {children}
             <div>Footer!</div>
         </>
-    );
-};
+  )
+}
