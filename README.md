@@ -10,6 +10,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - preferred file structure
 - typescript
+- linting
+- Dockerized
+
 - MUI & styled components with theming
 - routing (multiple pages, query params, 404 page)
 
@@ -17,11 +20,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Features TODO
 
-- linting
 - testing framework
     - unit testing
     - e2e testing
-- Dockerized
 - state management (redux)
     - using redux toolkit
     - with examples of live updating data
@@ -48,7 +49,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm start` | `npm run docker:dev`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.

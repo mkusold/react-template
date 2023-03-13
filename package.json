@@ -26,7 +26,9 @@
     "test": "react-scripts test",
     "lint": "npx eslint src/*",
     "lint:fix": "npx eslint src/* --fix",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "docker:dev": "docker compose up --build webapp-dev",
+    "docker:build": "docker compose up --build webapp-build"
   },
   "browserslist": {
     "production": [
