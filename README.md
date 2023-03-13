@@ -16,6 +16,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - MUI & styled components with theming
 - routing (multiple pages, query params, 404 page)
+- state management (redux-toolit)
 
 ### Optional Features
 
@@ -25,7 +26,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     - unit testing
     - e2e testing
 - state management (redux)
-    - using redux toolkit
     - with examples of live updating data
     - api request examples
     - mock data

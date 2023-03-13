@@ -15,11 +15,15 @@ import AdbIcon from '@mui/icons-material/Adb'
 import { Link } from 'react-router-dom'
 
 import { NAVITEMS } from '../../pages/routes'
+import { useAppSelector } from '../../store/hooks'
+import { selectUser } from '../../store/user/user.slice'
 
 const pages = NAVITEMS.map(({ name, path }) => ({ name, path }))
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout']
 
 export const Navbar = () => {
+  const user = useAppSelector(selectUser)
+
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null)
   const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null)
 
@@ -134,7 +138,7 @@ export const Navbar = () => {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <Avatar alt={user} src="/static/images/avatar/2.jpg" />
               </IconButton>
             </Tooltip>
             <Menu
