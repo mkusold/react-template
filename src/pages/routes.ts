@@ -2,12 +2,20 @@ export const ROUTES = {
   home: {
     name: 'Home',
     path: '/',
-    showNav: false
+    showNav: false,
+    isProtected: false
+  },
+  profile: {
+    name: 'Profile',
+    path: '/profile',
+    showNav: false,
+    isProtected: true
   },
   map: {
     name: 'Map',
     path: '/map',
-    showNav: true
+    showNav: true,
+    isProtected: true
   }
 }
 

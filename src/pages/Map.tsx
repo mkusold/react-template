@@ -2,6 +2,7 @@ import React from 'react'
 import { Box, Typography } from '@mui/material'
 import { Base } from './base'
 import { useSearchParams } from 'react-router-dom'
+import { ROUTES } from './routes'
 
 const params = {
   center: 'center'
@@ -10,7 +11,7 @@ export const Map = () => {
   const [searchParams] = useSearchParams()
   const center = searchParams.get(params.center)
   return (
-        <Base>
+        <Base isProtected={ROUTES.map.isProtected}>
             <Box sx={{
               flexGrow: 1,
               backgroundColor: 'whitesmoke',

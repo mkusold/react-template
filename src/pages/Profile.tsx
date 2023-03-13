@@ -1,10 +1,11 @@
 import React from 'react'
 import { Box, Typography } from '@mui/material'
 import { Base } from './base'
+import { ROUTES } from './routes'
 
-export const FourOhFour = () => {
+export const Profile = () => {
   return (
-        <Base isProtected={false}>
+        <Base isProtected={ROUTES.profile.isProtected}>
             <Box sx={{
               flexGrow: 1,
               backgroundColor: 'whitesmoke',
@@ -12,7 +13,7 @@ export const FourOhFour = () => {
               justifyContent: 'center',
               alignItems: 'center'
             }}>
-                <Typography variant="h3">404</Typography>
+                <Typography variant="h3">Profile</Typography>
             </Box>
         </Base>
   )
