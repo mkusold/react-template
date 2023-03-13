@@ -13,6 +13,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - linting
 - Dockerized
 - CI - Github Actions (linting)
+
 - MUI & styled components with theming
 - routing (multiple pages, query params, 404 page)
 
