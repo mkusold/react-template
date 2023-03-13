@@ -12,7 +12,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - typescript
 - linting
 - Dockerized
-
+- CI - Github Actions (linting)
 - MUI & styled components with theming
 - routing (multiple pages, query params, 404 page)
 
@@ -41,8 +41,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - PWA capable
 - feature flagging
 - dotenv vars
-- CI/CD?
-    - netlify?
+- CD (netlify?)
 - logging?
 
 ## Available Scripts
