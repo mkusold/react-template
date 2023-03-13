@@ -21,6 +21,6 @@ CMD ["start"]
 # ==== BUILD =====
 FROM development as build
 RUN npm run build
-ENTRYPOINT ["npm"]
+ENTRYPOINT ["npm", "run"]
 
 # ==== BUILD =====
