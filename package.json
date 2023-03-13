@@ -28,7 +28,7 @@
     "lint:fix": "npx eslint src/* --fix",
     "eject": "react-scripts eject",
     "docker:dev": "docker compose up --build webapp-dev",
-    "docker:build": "docker compose up --build webapp-build"
+    "docker:ci": "docker compose up --build webapp-ci"
   },
   "browserslist": {
     "production": [

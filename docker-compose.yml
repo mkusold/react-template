@@ -13,11 +13,11 @@ services:
       - '.:/app'
       - '/app/node_modules'
     
-  webapp-build:
+  webapp-ci:
     build:
       context: .
       dockerfile: Dockerfile
-      target: production
+      target: build
     ports:
       - '3000:3000'
     environment:
