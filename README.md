@@ -2,11 +2,11 @@
 
 A base SPA React template for personal projects and for interviews
 
+![alt text](./documentation/screenshot.png)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Features
-
-![alt text](./documentation/screenshot.png)
 
 ### Base
 
