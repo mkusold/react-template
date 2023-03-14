@@ -21,12 +21,12 @@ export const Footer = () => {
   return (
     <Wrapper>
         <Grid container>
-            <Grid item xs={6}>
+            <Grid item xs={8}>
                 <FooterContent direction="row" alignItems="center">
-                    <Typography variant="body1">Copyright {new Date().getFullYear()}</Typography>
+                    <Typography variant="body1">© Milo Kusold {new Date().getFullYear()} - All Rights Reserved</Typography>
                 </FooterContent>
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={4}>
                 <Stack direction="row" alignItems="center" justifyContent="flex-end">
                     <SocialButton aria="instagram" to="https://www.instagram.com"><InstagramIcon/></SocialButton>
                     <SocialButton aria="facebook" to="https://www.facebook.com"><FacebookRounded/></SocialButton>
