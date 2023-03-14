@@ -27,6 +27,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - images
 - map (mapbox)
 - dotenv vars
+- charts
 
 ## Features TODO
 
