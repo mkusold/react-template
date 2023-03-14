@@ -1,9 +1,13 @@
 import * as React from 'react'
-import { Avatar, IconButton, Menu, MenuItem, Tooltip, Typography } from '@mui/material'
+import { Avatar, IconButton, Menu, MenuItem, styled, Tooltip, Typography } from '@mui/material'
 import { useAppDispatch, useAppSelector } from '../../store/hooks'
 import { useNavigate } from 'react-router-dom'
 import { logout, selectUser } from '../../store/user/user.slice'
 import { ROUTES } from '../../pages/routes'
+
+const StyledMenu = styled(Menu)(() => ({
+  marginTop: '45px'
+}))
 
 export const UserSettings = () => {
   const navigate = useNavigate()
@@ -33,8 +37,7 @@ export const UserSettings = () => {
                 <Avatar alt={user.name} src="/static/images/avatar/2.jpg" />
               </IconButton>
             </Tooltip>
-            <Menu
-              sx={{ mt: '45px' }}
+            <StyledMenu
               id="menu-appbar"
               anchorEl={anchorElUser}
               anchorOrigin={{
@@ -57,7 +60,7 @@ export const UserSettings = () => {
                   <Typography textAlign="center">{name}</Typography>
                 </MenuItem>
               ))}
-            </Menu>
+            </StyledMenu>
         </>
   )
 }
