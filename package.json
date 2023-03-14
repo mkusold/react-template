@@ -32,8 +32,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "lint": "npx eslint src/*",
-    "lint:fix": "npx eslint src/* --fix",
+    "lint": "npx eslint \"**/*.{ts,tsx}\"",
+    "lint:fix": "npx eslint \"**/*.{ts,tsx}\" --fix",
     "eject": "react-scripts eject",
     "docker:dev": "docker compose up --build webapp-dev",
     "docker:ci": "docker compose up --build webapp-ci"
