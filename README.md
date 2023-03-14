@@ -13,6 +13,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - linting
 - Dockerized
 - CI - Github Actions (linting)
+- feature flagging
+- various screen width responsiveness
 
 ### Additional Libraries
 
@@ -34,8 +36,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - state management (redux)
     - with examples of live updating data
     - api request examples
-- various screen width responsiveness
-- feature flagging
 - PWA capable
 - testing framework
     - unit testing

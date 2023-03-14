@@ -9,6 +9,7 @@ import { mockParagraph } from '../../utils/mock'
 import { Content } from '../base/content'
 import { AreaChart } from '../../components/charts/area'
 import { BarChart } from '../../components/charts/bar'
+import { features } from '../../utils/featureFlags'
 
 const Chart = styled(Paper)(({ theme }) => ({
   height: '300px'
@@ -23,7 +24,8 @@ export const Home = () => {
               ? (
             <>
               <Typography variant="h1">Home</Typography>
-              <Grid container spacing={2}>
+              {features.charts &&
+              (<Grid container spacing={2}>
                 <Grid item xs={6}>
                   <Chart>
                     <BarChart />
@@ -34,7 +36,8 @@ export const Home = () => {
                     <AreaChart />
                   </Chart>
                 </Grid>
-              </Grid>
+              </Grid>)
+              }
 
               <Typography variant="body1">{mockParagraph(3)}</Typography>
             </>)
