@@ -7,6 +7,9 @@ import { store } from './store/store'
 import theme from './theme/theme'
 import { router } from './pages/router'
 
+import mapboxgl from 'mapbox-gl' // eslint-disable-line import/no-webpack-loader-syntax
+mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_API_TOKEN ?? ''
+
 function App () {
   return (
     <Provider store={store}>

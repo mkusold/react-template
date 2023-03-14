@@ -23,31 +23,30 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### Component Examples
 
 - user login
-- form
+- forms
 - images
+- map (mapbox)
+- dotenv vars
 
 ## Features TODO
 
-- testing framework
-    - unit testing
-    - e2e testing
 - state management (redux)
     - with examples of live updating data
     - api request examples
+- various screen width responsiveness
+- feature flagging
+- PWA capable
+- testing framework
+    - unit testing
+    - e2e testing
 - CSS animation or webgl 2D / 3D animation
-- map (openlayers)
 - metadata
     - favicon
     - social media posting metadata
-- various screen width responsiveness
 - cross browser consistency
 - 100% a11y lighthouse score
 - performance
-- PWA capable
-- feature flagging
-- dotenv vars
 - CD (netlify?)
-- logging?
 
 ## Available Scripts
 
