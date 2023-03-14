@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, Typography } from '@mui/material'
-import { Base } from './base/base'
-import { ROUTES } from './routes'
+import { Base } from '../base/base'
+import { ROUTES } from '../routes'
 
 export const Profile = () => {
   return (

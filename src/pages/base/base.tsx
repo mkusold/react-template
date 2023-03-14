@@ -8,8 +8,8 @@ import { ROUTES } from '../routes'
 import { Footer } from './footer'
 
 const NAVBAR_HEIGHT = {
-  lg: '68.5px',
-  md: '64px',
+  lg: '64px',
+  md: '68.5px',
   sm: '48px'
 }
 const FOOTER_HEIGHT = {
@@ -23,12 +23,13 @@ const Background = styled('div')(({ theme }) => ({
 }))
 
 const FullHeightContainer = styled(Container)(({ theme }) => ({
-  minHeight: `calc(100vh - ${NAVBAR_HEIGHT.lg} - ${FOOTER_HEIGHT.lg})`,
-  [theme.breakpoints.down('md')]: {
-    minHeight: `calc(100vh - ${NAVBAR_HEIGHT.md} - ${FOOTER_HEIGHT.lg})`
+  marginTop: theme.spacing(4),
+  minHeight: `calc(100vh - ${theme.spacing(4)} - ${NAVBAR_HEIGHT.lg} - ${FOOTER_HEIGHT.lg})`,
+  [theme.breakpoints.down('lg')]: {
+    minHeight: `calc(100vh- ${theme.spacing(4)} - ${NAVBAR_HEIGHT.md} - ${FOOTER_HEIGHT.lg})`
   },
   [theme.breakpoints.down('sm')]: {
-    minHeight: `calc(100vh - ${NAVBAR_HEIGHT.sm} - ${FOOTER_HEIGHT.sm})`
+    minHeight: `calc(100vh - ${theme.spacing(4)} - ${NAVBAR_HEIGHT.sm} - ${FOOTER_HEIGHT.sm})`
   }
 }))
 

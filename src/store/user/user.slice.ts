@@ -19,7 +19,7 @@ export const userSlice = createSlice({
       state.name = name
       state.loggedIn = true
     },
-    logout: (state, payload: PayloadAction) => {
+    logout: (state) => {
       state.name = ''
       state.loggedIn = false
     }

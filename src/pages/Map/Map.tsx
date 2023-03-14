@@ -1,8 +1,8 @@
 import React from 'react'
 import { Box, Typography } from '@mui/material'
-import { Base } from './base/base'
+import { Base } from '../base/base'
 import { useSearchParams } from 'react-router-dom'
-import { ROUTES } from './routes'
+import { ROUTES } from '../routes'
 
 const params = {
   center: 'center'

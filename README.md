@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Features
 
-### Base Features
+### Base
 
 - preferred file structure
 - typescript
@@ -14,11 +14,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Dockerized
 - CI - Github Actions (linting)
 
+### Additional Libraries
+
 - MUI & styled components with theming
 - routing (multiple pages, query params, 404 page)
 - state management (redux-toolit)
 
-### Optional Features
+### Component Examples
+
+- user login
+- form
 
 ## Features TODO
 
@@ -28,8 +33,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - state management (redux)
     - with examples of live updating data
     - api request examples
-    - mock data
-- user login
+
 - CSS animation or webgl 2D / 3D animation
 - map (openlayers)
 - metadata
