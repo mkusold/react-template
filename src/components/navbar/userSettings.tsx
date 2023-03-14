@@ -20,7 +20,7 @@ export const UserSettings = () => {
   }
   const settings = user.loggedIn
     ? [
-        { name: 'Profile', callback: () => {} },
+        { name: 'Profile', callback: () => { navigate(ROUTES.profile.path) } },
         { name: 'Logout', callback: () => dispatch(logout()) }
       ]
     : [

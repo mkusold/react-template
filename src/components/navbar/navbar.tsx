@@ -16,6 +16,11 @@ import { Logo, MobileLogo } from './logo'
 import { UserSettings } from './userSettings'
 import { useAppSelector } from '../../store/hooks'
 import { selectUser } from '../../store/user/user.slice'
+import { styled } from '@mui/material'
+
+const StyledLink = styled(Link)(() => ({
+  textDecoration: 'none'
+}))
 
 export const Navbar = () => {
   const user = useAppSelector(selectUser)
@@ -65,9 +70,9 @@ export const Navbar = () => {
             >
               {pages.map(({ name, path }) => (
                 <MenuItem key={name} onClick={handleCloseNavMenu}>
-                    <a href={path}>
+                    <StyledLink to={path}>
                     <Typography textAlign="center">{name}</Typography>
-                    </a>
+                    </StyledLink>
                 </MenuItem>
               ))}
             </Menu>
@@ -75,14 +80,14 @@ export const Navbar = () => {
           <MobileLogo />
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map(({ name, path }) => (
-              <Link to={path} key={name}>
+              <StyledLink to={path} key={name}>
                 <Button
                     onClick={handleCloseNavMenu}
                     sx={{ my: 2, color: 'white', display: 'block' }}
                 >
                     {name}
                 </Button>
-              </Link>
+              </StyledLink>
             ))}
           </Box>
 
