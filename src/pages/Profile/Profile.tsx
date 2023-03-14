@@ -1,20 +1,17 @@
 import React from 'react'
-import { Box, Typography } from '@mui/material'
+import { Typography } from '@mui/material'
 import { Base } from '../base/base'
 import { ROUTES } from '../routes'
+import { mockParagraph } from '../../utils/mock'
+import { Content } from '../base/content'
 
 export const Profile = () => {
   return (
         <Base isProtected={ROUTES.profile.isProtected}>
-            <Box sx={{
-              flexGrow: 1,
-              backgroundColor: 'whitesmoke',
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center'
-            }}>
-                <Typography variant="h3">Profile</Typography>
-            </Box>
+           <Content>
+              <Typography variant="h1">Profile</Typography>
+              <Typography variant="body1">{mockParagraph(3)}</Typography>
+            </Content>
         </Base>
   )
 }

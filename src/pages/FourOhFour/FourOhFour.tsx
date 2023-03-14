@@ -1,19 +1,18 @@
 import React from 'react'
-import { Box, Typography } from '@mui/material'
+import { Stack, Typography } from '@mui/material'
 import { Base } from '../base/base'
+import { Content } from '../base/content'
+import notFoundGif from '../../assets/notFound.gif'
 
 export const FourOhFour = () => {
   return (
         <Base>
-            <Box sx={{
-              flexGrow: 1,
-              backgroundColor: 'whitesmoke',
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center'
-            }}>
-                <Typography variant="h3">404</Typography>
-            </Box>
+             <Content>
+              <Stack direction="column" alignItems="center">
+                <Typography variant="h1">Oopsie Doopsie...</Typography>
+                <img src={notFoundGif} width="50%" height="auto" alt="404 animation"/>
+              </Stack>
+            </Content>
         </Base>
   )
 }

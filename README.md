@@ -24,6 +24,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - user login
 - form
+- images
 
 ## Features TODO
 
@@ -33,7 +34,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - state management (redux)
     - with examples of live updating data
     - api request examples
-
 - CSS animation or webgl 2D / 3D animation
 - map (openlayers)
 - metadata
