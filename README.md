@@ -6,6 +6,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Features
 
+![alt text](./documentation/screenshot.png)
+
 ### Base
 
 - preferred file structure
